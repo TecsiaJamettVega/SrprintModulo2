@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#navbutt {
+  padding-left: 5rem;
+}
+
+#indexbody,
+#bodycontacto {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 50px;
+  /* este valor debe ser igual o mayor al alto del pie */
+
+}
+
+
+#indexbody {
+  background-color: rgba(187, 226, 12, 0.897);
+  font-family: 'Montserrat-regular', sans-serif;
+  text-align: center;
+}
+
+#bodycontacto {
+  background-color: rgba(187, 226, 12, 0.897);
+  text-align: center;
+}
+
+#bodyestadisticas {
+  background-color: rgba(187, 226, 12, 0.897);
+}
+
+table.dataTable td {
+  border: 1px solid rgba(187, 226, 12, 0.897);
+  border-color: rgba(187, 226, 12, 0.897);
+}
+
+.link {
+  color: aliceblue;
+}
+
+#test {
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 20px;
+}
+
+
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7c1b1bb2;
+}
+
+a {
+  color: rgba(235, 225, 225, 0.897);
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+nav {
+  text-align: center;
+}
+
+#enlaces {
+  list-style: none;
+  display: flex;
+
+}
+
+#enlaces button {
+  background-color: transparent;
+  border: #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: medium;
+  right: 0%;
+}
+
+#enlaces button:hover {
+  background-color: #0ea566;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none
+}
+
+
+#navicon {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+
+.enlace {
+  color: rgba(255, 255, 255, 0.851);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.enlace:hover {
+  color: rgba(255, 255, 255, 0.851);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu li {
+  list-style: none;
+  margin: 20px 10px;
+
+}
+
+.empresa p {
+  display: flex;
+  justify-content: center;
+}
+
+.empresa h2,
+#titulo-datatable,
+#titulo-contacto {
+  font-family: 'Trade Winds', cursive;
+  font-size: 35px;
+  padding: 0.5em;
+  color: #7c1b1bb2
+}
+
+
+#slogan {
+  font-size: large;
+  color: aliceblue;
+  font-family: 'DynaPuff', cursive;
+}
+
+
+/* ########FOOTER######## */
+#futerbox {
+  background-color: #078007;
+  position: "absolute";
+  bottom: 0;
+  width: auto;
+  padding-top: 8px;
+  max-width: 99.6vw;
+}
+
+#futertext {
+  font-family: 'DynaPuff', cursive;
+  margin-left: 8px;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 16px;
+  color: aliceblue;
+}
+
+#imgcontacto {
+  background-color: transparent;
+  padding-left: 5%;
+}
+
+#foottext {
+  text-align: center;
+}
+
+#footicons {
+  text-align: center;
+}
+
+#futericon {
+  padding-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+}
+
+#tag {
+  font-size: small;
+  font-weight: 900;
+  font-family: 'Major Mono Display', monospace;
+  color: aliceblue;
+}
+
+#miphorm {
+  align-content: center;
+}
+
+#productos {
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 20px;
+}
+
+
+#contenido {
+  padding-bottom: 50px;
+  /* este valor debe ser igual o mayor al alto del pie */
+}
+
+/* EJEMPLO DE MEDIA QUERY
+@media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  } */
+
+.navbar {
+  z-index: 12;
+  transition: all 700ms ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    position: fixed;
+    left: -1200px;
+  }
+}
+
+#burger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  visibility: hidden;
+  
+}
+
+@media (max-width: 900px) {
+  #burger {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  .productos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 577px) {
+
+  #indexbody {
+    font-size: 20px;
+  }
+
+  .productos img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  #indexbody {
+    font-size: 25px;
+  }
+
+  .productos img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+
+
+
+/* Menu para dispositivos mas pequeños */
+
+/* Reseteo CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generales */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Botón burger */
+
+
+
+#burger .barra {
+  width: 30px;
+  height: 2px;
+  margin: 6px;
+  background-color: #a97c50;
+  transition: 400ms all ease-in-out
+}
+
+#burger.abierto .barra {
+  background-color: white;
+}
+
+#burger.abierto .barra.superior {
+  transform: translateY(8px) rotateZ(45deg);
+}
+
+#burger.abierto .barra.media {
+  width: 0;
+}
+
+#burger.abierto .barra.inferior {
+  transform: translateY(-8px) rotateZ(-45deg);
+}
+
+/* Menú lateral */
+
+.menu {
+  width: 360px;
+  height: 100vh;
+  background-color: #424242;
+  position: fixed;
+  top: 0;
+  left: -360px;
+  padding-top: 40px;
+  transition: all 700ms ease-in-out;
+}
+
+.menu.abierto {
+  left: 0;
+  z-index: 9;
+}
+
+.menu nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu nav a {
+  padding: 0.6rem 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  transition: 300ms all ease-in-out;
+}
+
+.menu nav a:hover {
+  color: white;
+}
+
+.menu .copyright {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
+
+#probando {
+  width: 100%;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  bottom: 50px;
+
+}
+
+.carousel-slide .carousel-item {
+  transition-duration: 2s;
+}
